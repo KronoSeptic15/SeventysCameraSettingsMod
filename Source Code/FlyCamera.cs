@@ -444,7 +444,7 @@ public class FlyCamera : MonoBehaviour
 
         if (PhotonNetwork.CurrentRoom != null)
         {
-            if (PhotonNetwork.CurrentRoom.IsVisible)
+            if (PhotonNetwork.CurrentRoom.IsVisible && PhotonNetwork.inRoom)
             {
                 allowedToFreecam = false;
             }
